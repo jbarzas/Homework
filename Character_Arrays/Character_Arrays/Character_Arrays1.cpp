@@ -1,15 +1,16 @@
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
-	char firstName[100];
-	char lastName[100];
+	char name[100];
 
-	std::cout << "Please enter your first and last name." << std::endl;
+	cout << "Please enter your first and last name." << endl;
 
-	std::cin >> firstName >> lastName;
+	cin.getline(name, 100);
 
-	std::cout << firstName << " " << lastName << std::endl;
+	cout << name << endl;
 
 	system("pause");
 }
