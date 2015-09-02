@@ -1,4 +1,4 @@
-﻿Build started 9/2/2015 11:18:55 AM.
+﻿Build started 9/2/2015 1:54:55 PM.
      1>Project "C:\Users\jeremy.barzas\Desktop\Homework\Text Adventure Game\Text_Adventure_Game\Text_Adventure_Game\Text_Adventure_Game.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp Source.cpp
@@ -13,4 +13,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.96
+Time Elapsed 00:00:00.86
