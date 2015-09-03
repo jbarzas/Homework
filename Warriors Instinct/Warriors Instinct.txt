@@ -1,20 +1,66 @@
-Anyone that takes my idea will be starved for days then tortured slowly while being chained in a pool of bleach and salt.....you have been warned
+Target demographic: Hardcore competitive for glory or casual just for fun players, the game will contain violence and blood/gore so it will need a mature rating.
+
+Target platform: Windows, Mac, Consoles
+
+A first person game heavily using physics driven animation to make striking something with a melee weapon feel like you are hitting something and not just tagging a target and causing it to lose health points. My end goal is to make a game that plays at as close to the speed of the players reaction time as possible with the only variables that effect your character's speed to act at the speed you input a command being your characters current amount of stamina and the gear set they choose.
+
+______________
+Control Scheme
 
 
+The way I logically see the game to be played is with a controller that has 2 joysticks(that are also a click button), 4 triggers/bumpers, 4 face buttons, and a D-pad.
 
-A game based of using physics driven animation to make melee fighting feel responsive. My end goal is  to make the game as close to the speed of human reaction time with the only detrimental variable to your effectiveness being your current amount of stamina left in a % based stamina bar.q
+I havent yet figured out how to bind all the functions to a keyboard and mouse in a way that it would feel as fluid as using a controller. This limits the player base to people who are on consoles or already own a controller for their computer that meets the requirements for the game.
 
-The players character creation will include the choice of ability(determined by race), armor(if any with the exception of undergarments) per body node(head, torso/shoulders, arms/hands, legs, and boots), weapon, shield(if any), and equipment.
+____________________________________________________________________________________________
+The character creation will include the choices of race, weapon, armor, and equipment items.
 
-The game will include a variety of 7 races(male or female) of asending size; Dwarf, Elf, Reptilian, Human, Feline, Minotaur, Ursan.]
+_________________________________________________________________________________________
+The game will include a variety of 7 races each with its own specific ability and hitbox.
 
-Each race will have an ability that goes on cooldown when used or drains stamina while active.
 
-The Dwarf's ability is called "Stoneform". When toggled on it will start to drain the players stamina causing the player to become immune to being staggered until they run out of stamina or the ability is toggeled off.
+The Dwarf's ability is called "Stoneform". When the ability button is pressed it will cause your character to become immune to being staggered and take less damage for a set duration when it ends your character will lose all stamina, then goes on cooldown for a set duration.
 
-The Elves ability is called "Blink". When the ability button is pressed it teleports the player a set distance across the ground in the direction the camera is pointed, the player may change the direction of it by holding the ability button and holding a movement direction as they release the ability button, this will not change the direction that they are facing, then it goes on cooldown for a set duration.
+The Elves ability is called "Blink". When the ability button is pressed it instantly teleports your character a set distance in the direction the camera is facing, the player may change the direction of it without changing the cameras facing by first holding the ability button and inputing a movement direction as you release the ability button, if there is something physically between you and the destination you will be placed on the otherside of the object, then go on cooldown for a set duration.
+ 
+The Feline's ability is called "Pounce". When the ability button is pressed the character will quickly leap forward in the direction the camera is facing a set distance, or until you come in contact with a physical object, if your character contacts another character it will automatically swing an increased speed heavy attack that will always stagger at no stamina cost, then go on cooldown for a set duration, this ability can be blocked to stop the damage, but will still cause stagger.
 
-The Reptilian ability is called "Camouflage". When the ability button is pressed the player will become invisible if stationary and become increasingly easier to see the faster they move, then it goes on cooldown for a set duration.
+The Human's ability is called "Resourcefulness". This increases the effectiveness of equipment items(damage, duration, area of effect, distance, etc.) and gives your character a second equipment item slot that is used by pressing the ability button.
 
-The Human ability is called "" which allows the player to choose one additional equipment item. 
+The Reptilian's ability is called "Camouflage". When the ability button is pressed your character will become see through(similar to the stealth of the predators in AVP movies) until the player either attacks, blocks, uses an item, or the set duration is up, the slower you move the harder you are to see, becoming completely invisible while stationary(you can still look around with the camera without canceling this effect), then it goes on cooldown for a set duration.
 
+The Minotaur's ability is called "Trampling Rush". When the ability button is pressed the character will become immune to being staggered and swiftly charge foward with reduced turning radius for a set duration or your character contacts a physical object, if your character contacts another character it will knock them down for a short duration, then goes on cooldown for a set duration, this ability can be blocked, but it will still knockdown. 
+
+The Ursan's ability is called "Primal Rage". When the ability button is pressed it will cause all of your character's attacks to stagger and deal more damage for a set duration when it ends you will lose all stamina, then goes on cooldown for a set duration.
+
+_______________________________________________________________________________________________
+All weapons in the game have properties to consider when choosing which one fits your playstyle.
+
+
+Weight - Determines the attack rate, stamina used per attack, and how much force is applied on contact with another character's body, weapon, or shield.
+
+Length - Determines the reach of the weapon.
+
+?? - Determines how effecient the weapon is at dealing damage with a hacking attack.
+
+?? - Determines how effecient the weapon is at dealing damage with a thrusting attack.
+
+___________________________________________________________________________________________________________________________________________________________________________
+The game will include a variety of equipment items that can be used to compliment your playstyle by covering a gap in your offense/defense or just giving you more utility.
+
+
+Smoke Bomb - Throws a bomb that staggers any characters(even your own) caught in its blast and emmits a cloud of smoke for a set duration that is harder to see through the closer you are to the center of cloud being impossible to see at the bomb itself, can only use once.
+
+Fire Bomb - Throws a bomb that damages and staggers any characters(even your own) caught in its blast and leaves a burning area on the ground that decays in size over a set duration, can only use once.
+
+Flash Bomb - Throws a bomb that blinds any characters(even your own) caught in its blast(lasts longer the closer you were to the blast) that decays over a set duration, can only use once.
+
+Sludge Bomb - Throw a bomb that leaves a pool of sludge on the ground for a set duration that slows down any characters(even your own) that are in it, if a character stays in the pool for a set duration they will become stuck in placed for the rest of the duration of the pool, can only use once
+ 
+Bola - Throws a bola that staggers any characters that are hit, if it hits the feet of a character it causes knockdown for a set duration, can only use once, can be blocked.
+
+Throwing Axe - Throws an axe that staggers and deals damage if it hits a character, can only be used once, can be blocked.
+
+Throwing Knives - Throws a volley of knives that deal damage if it hits a character, can be used more than once, can be blocked.
+
+Secondary Weapon - Allows you to choose an additional weapon, your character can swap weapons at anytime by pressing the equipment item button.
