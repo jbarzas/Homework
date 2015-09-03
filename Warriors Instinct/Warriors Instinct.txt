@@ -1,0 +1,20 @@
+Anyone that takes my idea will be starved for days then tortured slowly while being chained in a pool of bleach and salt.....you have been warned
+
+
+
+A game based of using physics driven animation to make melee fighting feel responsive. My end goal is  to make the game as close to the speed of human reaction time with the only detrimental variable to your effectiveness being your current amount of stamina left in a % based stamina bar.q
+
+The players character creation will include the choice of ability(determined by race), armor(if any with the exception of undergarments) per body node(head, torso/shoulders, arms/hands, legs, and boots), weapon, shield(if any), and equipment.
+
+The game will include a variety of 7 races(male or female) of asending size; Dwarf, Elf, Reptilian, Human, Feline, Minotaur, Ursan.]
+
+Each race will have an ability that goes on cooldown when used or drains stamina while active.
+
+The Dwarf's ability is called "Stoneform". When toggled on it will start to drain the players stamina causing the player to become immune to being staggered until they run out of stamina or the ability is toggeled off.
+
+The Elves ability is called "Blink". When the ability button is pressed it teleports the player a set distance across the ground in the direction the camera is pointed, the player may change the direction of it by holding the ability button and holding a movement direction as they release the ability button, this will not change the direction that they are facing, then it goes on cooldown for a set duration.
+
+The Reptilian ability is called "Camouflage". When the ability button is pressed the player will become invisible if stationary and become increasingly easier to see the faster they move, then it goes on cooldown for a set duration.
+
+The Human ability is called "" which allows the player to choose one additional equipment item. 
+
