@@ -1,0 +1,12 @@
+﻿Build started 9/8/2015 5:35:58 PM.
+     1>Project "C:\Users\jeremy.barzas\Desktop\Homework\Wumpus World\Wumpus_World\Wumpus_World\Wumpus_World.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\jeremy.barzas\desktop\homework\wumpus world\wumpus_world\wumpus_world\main.cpp(17): error C2143: syntax error: missing ';' before 'public'
+     1>c:\users\jeremy.barzas\desktop\homework\wumpus world\wumpus_world\wumpus_world\main.cpp(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>Done Building Project "C:\Users\jeremy.barzas\Desktop\Homework\Wumpus World\Wumpus_World\Wumpus_World\Wumpus_World.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.56

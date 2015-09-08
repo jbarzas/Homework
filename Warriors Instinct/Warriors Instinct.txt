@@ -12,10 +12,21 @@ The way I logically see the game to be played is with a controller that has 2 jo
 
 I havent yet figured out how to bind all the functions to a keyboard and mouse in a way that it would feel as fluid as using a controller. This limits the player base to people who are on consoles or already own a controller for their computer that meets the requirements for the game.
 
-____________________________________________________________________________________________
-The character creation will include the choices of race, weapon, armor, and equipment items.
+_____________________________________________________________________________________________
+The character creation screen include the choices of race, weapon, armor, and equipment items.
 
-_________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________
+It also includes an overall stats sections which shows important details to help you determine what race and gear to choose to fit your playstyle.
+
+Weight - Shows the total amount of weight your character has equipped.
+
+Speed - Determines how fast your character can move and sprint. 
+
+Defense Rating - Determines the average amount of force reduction your character has and how resistant it is to being staggered.
+
+Offense Rating - Determines the average amount of force that your character can apply with their main weapon and how effective it is at staggering an opponent.
+
+________________________________________________________________________________________
 The game will include a variety of 7 races each with its own specific ability and hitbox.
 
 
@@ -37,30 +48,40 @@ ________________________________________________________________________________
 All weapons in the game have properties to consider when choosing which one fits your playstyle.
 
 
-Weight - Determines the attack rate, stamina used per attack, and how much force is applied on contact with another character's body, weapon, or shield.
+Weight - Determines part of the attack rate, stamina used per attack, and how much force is applied on contact with another character's body, weapon, or shield.
 
 Length - Determines the reach of the weapon.
 
-?? - Determines how effecient the weapon is at dealing damage with a hacking attack.
+Swing Rating - Determines how effecient the weapon is at dealing damage with a swinging attack.(EX. an axe or a mace would have a higher swing rating than a sword)
 
-?? - Determines how effecient the weapon is at dealing damage with a thrusting attack.
+Thrust Rating - Determines how effecient the weapon is at dealing damage with a thrusting attack.(EX. a sword would have a higher thrust rating than a mace or an axe)
 
-___________________________________________________________________________________________________________________________________________________________________________
+___________________________________________________________________________
+All Armor in the game also has properties to consider to fit your playstyle.
+
+
+Weight - Determines how much weight each peice of armor adds your characters overall weight.
+
+Armor Rating - Determines how much force that piece of armor can resist.
+
+Flex Rating - Determines how fast your character can dodge/roll.
+
+__________________________________________________________________________________________________________________________________________________________________________
 The game will include a variety of equipment items that can be used to compliment your playstyle by covering a gap in your offense/defense or just giving you more utility.
 
 
-Smoke Bomb - Throws a bomb that staggers any characters(even your own) caught in its blast and emmits a cloud of smoke for a set duration that is harder to see through the closer you are to the center of cloud being impossible to see at the bomb itself, can only use once.
+Smoke Bomb - Throws a bomb that emmits a cloud of smoke for a set duration that is harder to see through the closer you are to the center of cloud being impossible to see at the bomb itself.
 
-Fire Bomb - Throws a bomb that damages and staggers any characters(even your own) caught in its blast and leaves a burning area on the ground that decays in size over a set duration, can only use once.
+Fire Bomb - Throws a bomb that damages and staggers any characters(even your own) caught in its blast and leaves a burning area on the ground that decays in size over a set duration.
 
-Flash Bomb - Throws a bomb that blinds any characters(even your own) caught in its blast(lasts longer the closer you were to the blast) that decays over a set duration, can only use once.
+Flash Bomb - Throws a bomb that staggers and blinds any characters(even your own) caught in its blast(lasts longer the closer you were to the blast) that decays over a set duration.
 
-Sludge Bomb - Throw a bomb that leaves a pool of sludge on the ground for a set duration that slows down any characters(even your own) that are in it, if a character stays in the pool for a set duration they will become stuck in placed for the rest of the duration of the pool, can only use once
+Sludge Bomb - Throw a bomb that leaves a pool of sludge on the ground for a set duration that slows down any characters(even your own) that are in it, if a character stays in the pool for a set duration they will become stuck in placed for the rest of the duration of the pool.
  
-Bola - Throws a bola that staggers any characters that are hit, if it hits the feet of a character it causes knockdown for a set duration, can only use once, can be blocked.
+Bola - Throws a bola that staggers any characters that are hit, if it hits the feet of a character it causes knockdown for a set duration, can be blocked.
 
-Throwing Axe - Throws an axe that staggers and deals damage if it hits a character, can only be used once, can be blocked.
+Throwing Axe - Throws an axe that staggers and deals damage if it hits a character, can be blocked.
 
-Throwing Knives - Throws a volley of knives that deal damage if it hits a character, can be used more than once, can be blocked.
+Throwing Knives - Throws a volley of knives that deal damage if it hits a character, this item has 3 charges, can be blocked.
 
-Secondary Weapon - Allows you to choose an additional weapon, your character can swap weapons at anytime by pressing the equipment item button.
+Secondary Weapon - Allows you to choose an additional weapon, the additional weapon's weight is added to your characters total equipment weight, your character can swap to this weapon at anytime by pressing the equipment item button.
