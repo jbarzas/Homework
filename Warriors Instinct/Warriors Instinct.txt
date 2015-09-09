@@ -12,6 +12,11 @@ The way I logically see the game to be played is with a controller that has 2 jo
 
 I havent yet figured out how to bind all the functions to a keyboard and mouse in a way that it would feel as fluid as using a controller. This limits the player base to people who are on consoles or already own a controller for their computer that meets the requirements for the game.
 
+
+To make your character attack you must press and hold the right trigger(for swinging attack) or the right bumper(for thrusting attack) and input a direction you want to attack from with the right joystick(looking joystick) then release it. If no direction was inputted then the attack will go directly to the center of your view. The longer you hold the attack button before release determines how strong the attack will be. 
+
+To block an attack you must press and hold the left trigger(to block), then input the direction you want to block in. If you match the direction of an incoming attack if will be a perfect block, which causes the attacker to be staggered. If the direction of the block is within a short distance of attack direction it will be a normal block, which causes the attacker and defender to be staggered. If no direction was inputted then the block will be in the center and it will be a quick block, which causes the defender to be staggered.
+
 _____________________________________________________________________________________________
 The character creation screen include the choices of race, weapon, armor, and equipment items.
 
@@ -78,10 +83,10 @@ Flash Bomb - Throws a bomb that staggers and blinds any characters(even your own
 
 Sludge Bomb - Throw a bomb that leaves a pool of sludge on the ground for a set duration that slows down any characters(even your own) that are in it, if a character stays in the pool for a set duration they will become stuck in placed for the rest of the duration of the pool.
  
-Bola - Throws a bola that staggers any characters that are hit, if it hits the feet of a character it causes knockdown for a set duration, can be blocked.
+Bola - Throws a bola that staggers any characters that are hit, if it hits the feet of a character it causes knockdown for a set duration.
 
-Throwing Axe - Throws an axe that staggers and deals damage if it hits a character, can be blocked.
+Throwing Axe - Throws an axe that staggers and deals damage if it hits a character, can be blocked with a shield.
 
-Throwing Knives - Throws a volley of knives that deal damage if it hits a character, this item has 3 charges, can be blocked.
+Throwing Knives - Throws a volley of knives that deal damage if it hits a character, this item has 3 charges, can be blocked with a shield.
 
 Secondary Weapon - Allows you to choose an additional weapon, the additional weapon's weight is added to your characters total equipment weight, your character can swap to this weapon at anytime by pressing the equipment item button.
