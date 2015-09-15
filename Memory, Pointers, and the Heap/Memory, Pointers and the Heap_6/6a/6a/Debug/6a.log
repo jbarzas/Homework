@@ -1,0 +1,5 @@
+﻿  6a.cpp
+c:\users\jeremy.barzas\desktop\homework\memory, pointers, and the heap\memory, pointers and the heap_6\6a\6a\6a.cpp(14): warning C4018: '>': signed/unsigned mismatch
+c:\users\jeremy.barzas\desktop\homework\memory, pointers, and the heap\memory, pointers and the heap_6\6a\6a\6a.cpp(17): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+c:\users\jeremy.barzas\desktop\homework\memory, pointers, and the heap\memory, pointers and the heap_6\6a\6a\6a.cpp(18): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+  6a.vcxproj -> C:\Users\jeremy.barzas\Desktop\Homework\Memory, Pointers, and the Heap\Memory, Pointers and the Heap_6\6a\Debug\6a.exe
