@@ -24,7 +24,7 @@ int main()
 		cin >> input;
 		cout << "" << endl;	
 	
-		if (!(input == 1 || input == 2 || input == 2))
+		if (!(input == 1 || input == 2 || input == 3))
 		{
 			test = false;
 			cout << "That is not the number of an option." << endl;
@@ -49,12 +49,15 @@ int main()
 			cout << "You successfully unlock the door..." << endl;
 			cout << "" << endl;			
 		}
-		else if (test == true)
+		else 
 		{
-			cout << "You delve further into the dungeon..." << endl;
+			test = false;
+			cout << "It did not work..." << endl;
 			cout << "" << endl;
 		}
 	} while (test == false);
+	cout << "You delve further into the dungeon..." << endl;
+	cout << "" << endl;
 	system("pause");
 	system("cls");
 
