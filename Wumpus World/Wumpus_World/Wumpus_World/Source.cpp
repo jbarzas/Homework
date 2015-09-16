@@ -1,6 +1,6 @@
 #include "Classes.h"
 
-Cell::Cell(position l, bool h, bool b, bool g, bool glim, bool w, bool s, bool r)
+Cell::Cell(position l, bool h, bool b, bool g, bool glim, bool w, bool s)
 {
 	location = l;
 	pit = h;
@@ -9,31 +9,10 @@ Cell::Cell(position l, bool h, bool b, bool g, bool glim, bool w, bool s, bool r
 	glimmer = glim;
 	wumpus = w;
 	stench = s;
-	robot = r;
 }
 
-bool Cell::getRobot()
+Player::Player(position l, bool a)
 {
-	return robot;
-}
-
-bool Cell::setRobot(bool r)
-{
-	robot = r;
-	return robot;
-}
-
-bool Cell::getBreeze()
-{
-	return breeze;
-}
-
-bool Cell::getStench()
-{
-	return stench;
-}
-
-bool Cell::getGlimmer()
-{
-	return glimmer;
+	location = l;
+	alive = a;
 }
