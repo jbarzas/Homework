@@ -1,0 +1,3 @@
+﻿  Zombiemain.cpp
+c:\users\jeremy.barzas\desktop\homework\in-class assignments\zombie\zombie\zombiemain.cpp(67): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Zombie.vcxproj -> C:\Users\jeremy.barzas\Desktop\Homework\In-class Assignments\Zombie\Debug\Zombie.exe
