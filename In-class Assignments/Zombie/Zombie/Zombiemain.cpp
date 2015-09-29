@@ -25,10 +25,12 @@ void fight(Zombie &zom1, Zombie &zom2)
 		if (zom1.getAlive() == true)
 		{
 			cout << "zombie " << zom1.getJob() << " survives" << endl;
+			cout << endl;
 		}
 		else if (zom2.getAlive() == true)
 		{
 			cout << "zombie " << zom2.getJob() << " survives" << endl;
+			cout << endl;
 		}
 }
 
@@ -53,15 +55,11 @@ bool zombiecounter(Zombie zambies[])
 	return false;
 }
 
-void stuff()
-{
-	std::cout << "the things to stop this janky ass program" << std::endl;
-}
 void main()
 {
 	Zombie zambies[] = {Zombie(true, 200, 100, "soldier"),
 						Zombie(true, 125, 50, "mailman"),
-						Zombie(true, 100, 25, "baker"), 
+						Zombie(true, 150, 25, "baker"), 
 						Zombie(true, 100, 50, "teacher"),
 						Zombie(true, 150, 75, "officer") };
 	srand(time(NULL));
@@ -79,12 +77,14 @@ void main()
 		if (zambies[z1].getAlive() && zambies[z2].getAlive())
 		{
 			fight(zambies[z1], zambies[z2]);
-
 		}
-		system("pause");
-
 	} while (!zombiecounter(zambies));
-
+	for (int i = 0; i < sizeof(zambies)/sizeof(Zombie); i++)
+	{
+		if (zambies[i].getAlive() == true)
+		{
+			cout << zambies[i].getJob() << endl;
+		}
+	}
 	system("pause");
 }
-

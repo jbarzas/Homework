@@ -1,0 +1,7 @@
+﻿  Zombie.cpp
+  Zombiemain.cpp
+Zombiemain.cpp(65): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating code
+  All 100 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Zombie.vcxproj -> C:\Users\jeremy.barzas\Desktop\Homework\In-class Assignments\Zombie\Release\Zombie.exe
