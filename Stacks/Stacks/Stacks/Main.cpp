@@ -1,17 +1,12 @@
 #include "stacks.h"
 
-/*
-A function that links two nodes.
+
+//A function that links two nodes.
 
 void linkNodes(Node a, Node &b)
 { 
-	do
-	{
 		a.nextNode = &b;
-	
-	} while (!(&b == NULL));	
 }
-*/
 
 
 void main()
