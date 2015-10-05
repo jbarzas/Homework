@@ -1,14 +1,5 @@
 #include "stacks.h"
 
-
-//A function that links two nodes.
-
-void linkNodes(Node a, Node &b)
-{ 
-		a.nextNode = &b;
-}
-
-
 void main()
 {
 	Node node1 = Node(1);
@@ -17,10 +8,6 @@ void main()
 
 	Stack bucket = Stack();
 
-	node1.nextNode = &node2;
-	node2.nextNode = &node3;
-	node3.nextNode = NULL;
-	
 	bucket.push(node1);
 	cout << bucket.getTop() << endl;
 	
@@ -29,7 +16,6 @@ void main()
 	
 	bucket.push(node3);
 	cout << bucket.getTop() << endl;
-	
 
 	system("pause");
 }

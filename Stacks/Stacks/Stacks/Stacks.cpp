@@ -17,7 +17,7 @@ Node* Stack::getTop()
 
 void Stack::push(Node &n)
 {
-	if (!(top = NULL))
+	if (top == NULL)
 	{
 		top = &n;
 	}
