@@ -13,9 +13,12 @@ class Node
 class Stack
 {
 	public:
+		int size = 0;
 		Node *top;
 		Stack();
-		Node *getTop();
-		void push(Node &);
-		void pop();
+		int push(Node &);
+		int pop();
+		void print();
+		bool empty();
+		void peek();
 };

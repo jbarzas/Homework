@@ -2,20 +2,33 @@
 
 void main()
 {
-	Node node1 = Node(1);
-	Node node2 = Node(2);
-	Node node3 = Node(3);
+	Node node1(1);
+	Node node2(2);
+	Node node3(3);
 
 	Stack bucket = Stack();
 
 	bucket.push(node1);
-	cout << bucket.getTop() << endl;
+	cout << "stack size: " << bucket.size << endl;
+	bucket.print();
 	
 	bucket.push(node2);
-	cout << bucket.getTop() << endl;
+	cout << "stack size: " << bucket.size << endl;
+	bucket.print();
 	
 	bucket.push(node3);
-	cout << bucket.getTop() << endl;
+	cout << "stack size: " << bucket.size << endl;
+	bucket.print();
+
+	bucket.pop();
+	cout << "stack size: " << bucket.size << endl;
+	bucket.print();
+	bucket.peek();
+
+	bucket.pop();
+	cout << "stack size: " << bucket.size << endl;
+	bucket.print();
+	bucket.peek();
 
 	system("pause");
 }
