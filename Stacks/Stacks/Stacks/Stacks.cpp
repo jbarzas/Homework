@@ -39,19 +39,26 @@ int Stack::pop()
 
 void Stack::print()
 {
-	Node tnode = *top;
-
-	for (int i = size; i >= 1; i--)
+	if (this->empty() == false)
 	{
-		if (tnode.nextNode != NULL)
+		Node tnode = *top;
+
+		for (int i = size; i >= 1; i--)
 		{
-			cout << tnode.data << endl;
-			tnode = *tnode.nextNode;
+			if (tnode.nextNode != NULL)
+			{
+				cout << tnode.data << endl;
+				tnode = *tnode.nextNode;
+			}
+			else
+			{
+				cout << tnode.data << endl;
+			}
 		}
-		else
-		{
-			cout << tnode.data << endl;
-		}
+	}
+	else if(this->empty() == true)
+	{
+		cout << "The stack is empty." << endl;
 	}
 }
 
