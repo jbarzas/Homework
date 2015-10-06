@@ -55,7 +55,7 @@ int main()
 		default:
 			break;
 		}
-	} while (*robot.alivePtr == true);
+	} while (robot.alive == true);
 
 	system("pause");
 }
