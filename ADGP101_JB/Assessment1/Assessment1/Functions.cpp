@@ -1,32 +1,38 @@
 #include "Classes.h"
 
+// constructor function for the Cell class.
 Cell::Cell()
 {
 }
 
-position Cell::setLocation(int x, int y)
+// constructor function for the Player class.
+// defines the Players position on creation as being at (0, 0) to give it a fixed start location.
+// defines the Player on creation as alive.
+// defines the Player on creation as not having the gold.
+Player::Player()
 {
-	location = { x,y };
-	return location;
-}
-position Cell::getLocation()
-{
-	return location;
-}
-
-Player::Player(position l, bool a)
-{
-	location = l;
-	alive = a;
+	location = { 0,0 };
+	alive = true;
+	gold = false;
 }
 
-position Player::setLocation(int x, int y)
+// constructor function for the Gold class.
+// defines the Golds position on creation as being at (3, 1) to give a fixed start location.
+Gold::Gold()
 {
-	location = { x,y };
-	return location;
+	location = { 3,1 };
 }
 
-position Player::getLocation()
+// constructor function for the Wumpus class.
+// defines the Wumpus position on creation as being at (2, 1) to give a fixed start location.
+Wumpus::Wumpus()
 {
-	return location;
+	location = { 2,1 };
+}
+
+// constructor function for the Pit class.
+// function takes in the argument of a position struct to be bale to make multiple pits at different locations.
+Pit::Pit(position p)
+{
+	location = p;
 }
