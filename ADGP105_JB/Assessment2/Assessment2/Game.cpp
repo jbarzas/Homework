@@ -26,7 +26,7 @@ int main()
 	Cell* cell;
 	cell = new Cell[i];
 	
-	// creates 3 files to store the "x" position, "y" position, and the gold boolean.
+	// creates 4 files to store the "x" position, "y" position, players gold boolean, and wumpus alive boolean.
 	fstream Xpos;
 	fstream Ypos;
 	fstream goldBool;
