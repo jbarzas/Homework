@@ -118,11 +118,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Classes.h" />
+    <ClInclude Include="Objects_Header.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Functions.cpp" />
-    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Class_Constructors.cpp" />
+    <ClCompile Include="Class_Functions.cpp" />
+    <ClCompile Include="Main_Game.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
