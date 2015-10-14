@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <fstream>
+#include "time.h"
 
 using namespace std;
 
@@ -51,6 +52,7 @@ class Wumpus
 public:
 	position location;
 	bool alive;
+	Wumpus(position);
 	Wumpus();
 };
 
@@ -78,4 +80,5 @@ public:
 	Scanner();
 	void useScanner(Scanner, Player, Pit[], Wumpus, Gold);
 };
+
 #endif

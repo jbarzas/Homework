@@ -1,14 +1,21 @@
 #include "Objects_Header.h"
 
+int RNG(int mod)
+{
+	int temp = rand() % mod;
+
+	return temp;
+}
+
 // creates a function that creates a grid and returns void.
 // takes in the arguments of two intergers and an array of instances of the Cell class.
- void createGrid(int rows, int cols, Cell g[])
+ void createGrid(int size, Cell g[])
 {
 	// defines the "x" location of the "i" position in the array of Cell instances as the value of "i".
 	// defines the "y" location of the "j" position in the array of Cell instances as the value of "j".
-	for (int i = 0; i < rows; i++)
+	for (int i = 0; i < size; i++)
 	{		
-		for (int j = 0; j < cols; j++)
+		for (int j = 0; j < size; j++)
 		{
 			g[j].location.y = j;
 			g[i].location.x = i;
@@ -16,68 +23,123 @@
 	}
 }
 
-int main()
+ /*void spawnWumps(int size, Wumpus w[])
+ {
+	 for (int i = 0; i >= sizeof(w); i++)
+	 {
+		 w[i].location.x = RNG(size);
+		 cout << w[i].location.y << "/n";
+		 w[i].location.y = RNG(size);
+		 cout << w[i].location.y << "/n";
+	 }
+ }*/
+
+void main()
 {
+	srand(time(NULL));
+	
+/*	int intInput;
+	int gridSize;
+	int memSize;
+	int wumpSize;
+	int wumpX;
+	int wumpY;
+
+	cout << "Welcome to ADGP105 assessment project!" << endl;
+	cout << "\n";
+	cout << "Choose your difficulty:" << endl;
+	cout << "Type 1 for easy and 2 for hard." << endl;
+	
+	cin >> intInput;
+
+	switch (intInput)
+	{
+	case 1:
+		gridSize = 4;
+		memSize = 16;
+		wumpSize = 1;
+		wumpX = RNG(gridSize);
+		wumpY = RNG(gridSize);
+		break;
+
+	case 2:
+		gridSize = 6;
+		memSize = 36;
+		wumpSize = 3;
+		wumpX = RNG(gridSize);
+		wumpY = RNG(gridSize);
+		break;
+	}
+	
+	Cell* cell;
+	cell = new Cell[memSize];
+
+	createGrid(gridSize, cell);
+
+	Wumpus* wump;
+	wump = new Wumpus[wumpSize];
+
+	spawnWumps(gridSize, wump); */
+
 	// dynamic memory allocation
 	// creates an array of instances of the Cell class with a dynamic size.
 	// this is setup in a way so that you could ask the user for an array size and it would allocate the required amout of memory.
-	int i = 16;
 	Cell* cell;
-	cell = new Cell[i];
-	
-	// calls the function that creates the grid to be used as the game map defined as a 4 x 4 grid stored inside the dynamic cell array.
-	createGrid(4, 4, cell);
+	cell = new Cell[16];
 
-	// creates 4 files to store the "x" position, "y" position, players gold boolean, and wumpus alive boolean.
-	fstream Xpos;
-	fstream Ypos;
-	fstream goldBool;
-	fstream wumpusAlive;
+	// calls the function that creates the grid to be used as the game map defined as a 4 x 4 grid stored inside the dynamic cell array.
+	createGrid(4, cell);
+
+	// creates a varible to be used as a text file.
+	fstream gameSave;
 
 	// makes a bool variable used to define the default win condition as false until changed when certain criteria is met.
 	bool winCondition = false;
 
-	// makes a char variable used to store user input to be used in the movement switch case statements.
-	char input;
-
-	// creates ac instance of the Player class named player defined as the constructor function.
+	// creates an instance of the Player class named player defined as the constructor function.
 	Player player = Player();
 
 	// creates an instance of the Scanner class name scanner defined as the constructor function.
 	Scanner scanner = Scanner();
 
-	// creates ac instance of the Gold class named gold defined as the constructor function.
+	// creates an instance of the Gold class named gold defined as the constructor function.
 	Gold gold = Gold();
 
-	// creates ac instance of the Wumpus class named wumpus defined as the constructor function.
-	Wumpus wumpus = Wumpus();
+	// creates an instance of the Wumpus class named wumpus defined as the constructor function.
+	Wumpus wumpus = Wumpus({ RNG(4),RNG(4) });
+
+	cout << "Wumpus location: " << wumpus.location.x << " = x, " << wumpus.location.y << " = y" << endl;
+	cout << "\n";
 
 	// creates an array of instances of the Pit class.
 	Pit pits[4] = { Pit({1,1}), Pit({ 1,3 }), Pit({ 3,0 }), Pit({ 3,3 }) };
 
 	// creates an instance of the Arrow class name arrow defined as the constructor function.
 	Arrow arrow = Arrow();
-	
+
 	// displays instructions for the user to the console.
 	cout << "Type your input then press enter to do actions" << endl;
 	cout << "Use 'w','a','s','d' as the arrow keys to move." << endl;
 	cout << "Use 'f' to draw your bow then 'w','a','s','d' to shoot in a direction ." << endl;
 	cout << "Use 'r' to check your scanner." << endl;
 	cout << "Use 'q' to save, and 'e' to load a save" << endl;
-	cout << "" << endl;
+	cout << "\n";
 		
-	cout << "You enter the cave of the Wumpus in search of gold..." << endl;
-	cout << "" << endl;
-
+	cout << "You enter the cave of the Wumpus monsters in search of gold..." << endl;
+	cout << "\n";
+	
 	cout << "Which direction do you want to go?" << endl;
-	cout << "" << endl;
+	cout << "\n";
 
 	// starts the game loop.
 	do
 	{
+		// makes a char variable used to store user input to be used in the movement switch case statements.
+		char input;
+
 		// takes in the users input to be check against the switch/case statments.
 		cin >> input;
-		cout << "" << endl;
+		cout << "\n";
 
 		// tells the user that the wrong input was entered and lists the correct inputs if the wrong input was entered.
 		if (!(input == 'w' || input == 'a' || input == 's' || input == 'd' || input == 'q' || input == 'e' || input == 'f' || input == 'r'))
@@ -87,6 +149,7 @@ int main()
 			cout << "Use 'f' to draw your bow then 'w','a','s','d' to shoot in a direction ." << endl;
 			cout << "Use 'r' to check your scanner, you only have 2." << endl;
 			cout << "Use 'q' to save, and 'e' to load a save." << endl;
+			cout << "\n";
 		}
 
 		// creates a switch/case statment thats accepts the character variable "input".
@@ -97,7 +160,7 @@ int main()
 			player.location.x, player.location.y += 1;
 			cout << "You moved to the North..." << endl;
 			cout << "Your X, Y position is: " << player.location.x << ", " << player.location.y << endl;
-			cout << "" << endl;
+			cout << "\n";
 				break;
 
 			// subtracts 1 from the players "y" cooridinate if 's' was the input.
@@ -105,7 +168,7 @@ int main()
 			player.location.x, player.location.y -= 1;
 			cout << "You moved to the South..." << endl;
 			cout << "Your X, Y position is: " << player.location.x << ", " << player.location.y << endl;
-			cout << "" << endl;
+			cout << "\n";
 				break;
 
 			// subtracts 1 to the players "x" cooridinate if 'a' was the input.
@@ -113,7 +176,7 @@ int main()
 			player.location.x -= 1, player.location.y;
 			cout << "You moved to the West..." << endl;
 			cout << "Your X, Y position is: " << player.location.x << ", " << player.location.y << endl;
-			cout << "" << endl;
+			cout << "\n";
 				break;
 
 			// adds 1 to the players "x" cooridinate if 'd' was the input.
@@ -121,7 +184,7 @@ int main()
 			player.location.x += 1, player.location.y;
 			cout << "You moved to the East..." << endl;
 			cout << "Your X, Y position is: " << player.location.x << ", " << player.location.y << endl;
-			cout << "" << endl;
+			cout << "\n";
 				break;
 
 			// calls the useScanner function to scan the area if 'r' was the input.
@@ -136,7 +199,7 @@ int main()
 			{
 				wumpus.alive = false;
 				cout << "You have killed the Wumpus monster!" << endl;
-				cout << "" << endl;
+				cout << "\n";
 			}
 
 			else
@@ -147,46 +210,30 @@ int main()
 
 			// saves the players data to a file if 'q' was the input.
 		case 'q':
-			Xpos.open("X position.txt", ios_base::out);
-			Ypos.open("Y position.txt", ios_base::out);
-			goldBool.open("Gold Bool.txt", ios_base::out);
-			wumpusAlive.open("Wumpus Bool.txt", ios_base::out);
-				
-			Xpos << player.location.x;
-			Ypos << player.location.y;
-			goldBool << player.gold;
-			wumpusAlive << wumpus.alive;
-				
-			Xpos.close();
-			Ypos.close();
-			goldBool.close();
-			wumpusAlive.close();
+
+			gameSave.open("gameSave.txt", ios_base::out);
+	
+			gameSave << player.location.x << "\n" <<  player.location.y << "\n" << player.gold << "\n" << wumpus.alive;
+
+			gameSave.close();
 				
 			cout << "Game has been saved." << endl;
-			cout << "" << endl;
+			cout << "\n";
 				break;
 
 			// loads the players data from a file if 'e' was the input.
 		case 'e':
-			Xpos.open("X position.txt", ios_base::in);
-			Ypos.open("Y position.txt", ios_base::in);
-			goldBool.open("Gold Bool.txt", ios_base::in);
-			wumpusAlive.open("Wumpus Bool.txt", ios_base::in);
+		
+			gameSave.open("gameSave.txt", ios_base::in);
 				
-			Xpos >> player.location.x;
-			Ypos >> player.location.y;
-			goldBool >> player.gold;
-			wumpusAlive >> wumpus.alive;
-				
-			Xpos.close();
-			Ypos.close();
-			goldBool.close();
-			wumpusAlive.close();
+			gameSave >> player.location.x >> player.location.y >> player.gold >> wumpus.alive;
+			
+			gameSave.close();
 				
 			cout << "Game has been loaded." << endl;
-			cout << "" << endl;
+			cout << "\n";
 			cout << "Your X, Y position is: " << player.location.x << ", " << player.location.y << endl;
-			cout << "" << endl;
+			cout << "\n";
 				break;
 			
 		default:
@@ -197,47 +244,47 @@ int main()
 		{
 			player.alive = false;
 			cout << "You fall in a giant pit and are trapped forever..." << endl;
-			cout << "" << endl;
+			cout << "\n";
 		}
 
 		if ((player.location.x == pits[1].location.x) && (player.location.y == pits[1].location.y))
 		{
 			player.alive = false;
 			cout << "You fall in a giant pit and are trapped forever..." << endl;
-			cout << "" << endl;
+			cout << "\n";
 		}
 
 		if ((player.location.x == pits[2].location.x) && (player.location.y == pits[2].location.y))
 		{
 			player.alive = false;
 			cout << "You fall in a giant pit and are trapped forever..." << endl;
-			cout << "" << endl;
+			cout << "\n";
 		}
 
 		if ((player.location.x == pits[3].location.x) && (player.location.y == pits[3].location.y))
 		{
 			player.alive = false;
 			cout << "You fall in a giant pit and are trapped forever..." << endl;
-			cout << "" << endl;
+			cout << "\n";
 		}
-			
+
 		// displays a message to the console that you have died if the Player's "x" or "y" coordinate is not on the game map grid it sets the Alive bool of the Player to false.
 		if ((player.location.x == -1) ||
-			(player.location.x == 4) ||
-			(player.location.y == -1) ||
-			(player.location.y == 4))
+		(player.location.x == 4) ||
+		(player.location.y == -1) ||
+		(player.location.y == 4))
 		{
 			player.alive = false;
 			cout << "You fall of a ledge to your death..." << endl;
-			cout << "" << endl;
+			cout << "\n";
 		}
 
 		// displays a message to the console that you have died if the players "x" and "y" coordinates are equal to that of the Wumpus it sets the alive bool of the Player to false.
 		if ((player.location.x == wumpus.location.x) && (player.location.y == wumpus.location.y) && (wumpus.alive == true))
 		{
 			player.alive = false;
-			cout << "The Wumpus monster bites your head off.." << endl;
-			cout << "" << endl;
+			cout << "A Wumpus monster bites your head off.." << endl;
+			cout << "\n";
 		}
 
 		// if the Player's "x" and "y" coordinates are equal to that of the Gold it sets the Gold bool of the Player to true.
@@ -247,7 +294,7 @@ int main()
 			player.gold = true;
 			gold.onGround = false;
 			cout << "You have found the gold, now you must escape the Wumpus cave" << endl;
-			cout << "" << endl;
+			cout << "\n";
 		}
 
 		// if the players alive bool is false it sets the winCondition bool to false.
@@ -268,20 +315,15 @@ int main()
 	//if the winCondtion bool is true and the players alive bool is true display to the console that they have won the game.
 	if ((winCondition == true) && (player.alive == true))
 	{
-		cout << "" << endl;
+		cout << "\n";
+		cout << "\n";
 		cout << "Congradulations you escaped the cave with the gold!" << endl;
-		cout << "" << endl;
+		cout << "\n";
 		
-		// clears the save game files if the winCondition bool is true.
-		Xpos.open("X position.txt", ios_base::out);
-		Ypos.open("Y position.txt", ios_base::out);
-		goldBool.open("Gold Bool.txt", ios_base::out);
-		wumpusAlive.open("Wumpus Bool.txt", ios_base::out);
+		// clears the save game file if the winCondition bool is true.
+		gameSave.open("gameSave.txt", ios_base::out);
 		
-		Xpos.close();
-		Ypos.close();
-		goldBool.close();
-		wumpusAlive.close();
+		gameSave.close();
 	}
 	
 	// deallocates the dynamic memory of the Cell array.

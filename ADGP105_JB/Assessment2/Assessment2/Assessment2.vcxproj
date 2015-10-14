@@ -121,8 +121,7 @@
     <ClInclude Include="Objects_Header.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Class_Constructors.cpp" />
-    <ClCompile Include="Class_Functions.cpp" />
+    <ClCompile Include="Class_Function_Definitions.cpp" />
     <ClCompile Include="Main_Game.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

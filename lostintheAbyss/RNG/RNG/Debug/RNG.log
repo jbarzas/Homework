@@ -1,0 +1,3 @@
+﻿  RandomNumbers.cpp
+c:\users\jeremy.barzas\desktop\homework\lostintheabyss\rng\rng\randomnumbers.cpp(8): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  RNG.vcxproj -> C:\Users\jeremy.barzas\Desktop\Homework\lostintheAbyss\RNG\Debug\RNG.exe
