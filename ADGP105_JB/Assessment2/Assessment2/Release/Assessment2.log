@@ -1,0 +1,7 @@
+﻿  Class_Function_Definitions.cpp
+  Main_Game.cpp
+Main_Game.cpp(28): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating code
+  All 148 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Assessment2.vcxproj -> C:\Users\jeremy.barzas\Desktop\Homework\ADGP105_JB\Assessment2\Release\Assessment2.exe

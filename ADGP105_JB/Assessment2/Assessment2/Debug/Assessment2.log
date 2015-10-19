@@ -1,5 +1,7 @@
-﻿  Main_Game.cpp
+﻿  Class_Function_Definitions.cpp
+  Generating Code...
+  Compiling...
+  Main_Game.cpp
 c:\users\jeremy.barzas\desktop\homework\adgp105_jb\assessment2\assessment2\main_game.cpp(28): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Class_Function_Definitions.cpp
   Generating Code...
   Assessment2.vcxproj -> C:\Users\jeremy.barzas\Desktop\Homework\ADGP105_JB\Assessment2\Debug\Assessment2.exe
