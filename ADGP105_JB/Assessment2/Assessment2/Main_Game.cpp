@@ -8,7 +8,7 @@ int RNG(int mod)
 }
 
 // creates a function that creates a grid and returns void.
-// takes in the arguments of two intergers and an array of instances of the Cell class.
+// takes in the arguments of an interger and an array of instances of the Cell class.
  void createGrid(int size, Cell g[])
 {
 	// defines the "x" location of the "i" position in the array of Cell instances as the value of "i".
@@ -23,64 +23,10 @@ int RNG(int mod)
 	}
 }
 
- /*void spawnWumps(int size, Wumpus w[])
- {
-	 for (int i = 0; i >= sizeof(w); i++)
-	 {
-		 w[i].location.x = RNG(size);
-		 cout << w[i].location.y << "/n";
-		 w[i].location.y = RNG(size);
-		 cout << w[i].location.y << "/n";
-	 }
- }*/
-
 void main()
 {
 	srand(time(NULL));
 	
-/*	int intInput;
-	int gridSize;
-	int memSize;
-	int wumpSize;
-	int wumpX;
-	int wumpY;
-
-	cout << "Welcome to ADGP105 assessment project!" << endl;
-	cout << "\n";
-	cout << "Choose your difficulty:" << endl;
-	cout << "Type 1 for easy and 2 for hard." << endl;
-	
-	cin >> intInput;
-
-	switch (intInput)
-	{
-	case 1:
-		gridSize = 4;
-		memSize = 16;
-		wumpSize = 1;
-		wumpX = RNG(gridSize);
-		wumpY = RNG(gridSize);
-		break;
-
-	case 2:
-		gridSize = 6;
-		memSize = 36;
-		wumpSize = 3;
-		wumpX = RNG(gridSize);
-		wumpY = RNG(gridSize);
-		break;
-	}
-	
-	Cell* cell;
-	cell = new Cell[memSize];
-
-	createGrid(gridSize, cell);
-
-	Wumpus* wump;
-	wump = new Wumpus[wumpSize];
-
-	spawnWumps(gridSize, wump); */
-
 	// dynamic memory allocation
 	// creates an array of instances of the Cell class with a dynamic size.
 	// this is setup in a way so that you could ask the user for an array size and it would allocate the required amout of memory.
@@ -205,6 +151,7 @@ void main()
 			else
 			{
 				cout << "You didnt hit anything..." << endl;
+				cout << "\n";
 			}
 				break;
 

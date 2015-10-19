@@ -33,10 +33,6 @@ Wumpus::Wumpus(position p)
 	alive = true;
 }
 
-Wumpus::Wumpus()
-{
-}
-
 // constructor function for the Pit class.
 // function takes in the argument of a position struct to be bale to make multiple pits at different locations.
 Pit::Pit(position p)
@@ -44,14 +40,16 @@ Pit::Pit(position p)
 	location = p;
 }
 
+// constructor function for the Arrow class.
 Arrow::Arrow()
 {
 	location = { 0, 0 };
 }
 
+// constructor function for the Scannerclass.
 Scanner::Scanner()
 {
-	charge = 2;
+	charge = 3;
 }
 
 void Scanner::useScanner(Scanner s, Player c, Pit p[], Wumpus w, Gold g)

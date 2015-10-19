@@ -53,7 +53,6 @@ public:
 	position location;
 	bool alive;
 	Wumpus(position);
-	Wumpus();
 };
 
 // creates a class for the Wumpus that contains a position struct for location.
@@ -65,6 +64,9 @@ public:
 	Pit(position);
 };
 
+// creates a class for the Arrow that contains a position struct for location.
+// contains a function to create an Arrow.
+// contains a function to shoot an arrow.
 class Arrow
 {
 public:
@@ -73,6 +75,9 @@ public:
 	bool shootArrow(Arrow, Player, Wumpus);
 };
 
+// creates a class for the Scanner that contains an integer to hold the amount of charges.
+// contains a function to create a Scanner.
+// contains a function to use the scanner.
 class Scanner
 {
 public:
