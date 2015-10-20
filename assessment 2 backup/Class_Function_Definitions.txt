@@ -241,13 +241,13 @@ bool Arrow::shootArrow(Arrow a, Player c, Wumpus w)
 	case 'a':
 		cout << "You shot an arrow to the West..." << endl;
 		cout << "" << endl;
-		a.location.x += 1, a.location.y;
+		a.location.x -= 1, a.location.y;
 		break;
 
 	case 'd':
 		cout << "You shot an arrow to the East..." << endl;
 		cout << "" << endl;
-		a.location.x -= 1, a.location.y;
+		a.location.x += 1, a.location.y;
 		break;
 	}
 
