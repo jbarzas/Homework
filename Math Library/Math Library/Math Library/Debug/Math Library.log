@@ -1,16 +1,2 @@
 ﻿  Math_Main.cpp
-c:\users\jeremy.barzas\desktop\homework\math library\math library\math library\math_main.cpp(45): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\jeremy.barzas\desktop\homework\math library\math library\math library\math_main.cpp(51): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\jeremy.barzas\desktop\homework\math library\math library\math library\math_header.h(97): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  c:\users\jeremy.barzas\desktop\homework\math library\math library\math library\math_main.cpp(45): note: see reference to function template instantiation 'T mag2D<int>(Vector2D<T>)' being compiled
-          with
-          [
-              T=int
-          ]
-c:\users\jeremy.barzas\desktop\homework\math library\math library\math library\math_header.h(106): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  c:\users\jeremy.barzas\desktop\homework\math library\math library\math library\math_main.cpp(51): note: see reference to function template instantiation 'T mag3D<int>(Vector3D<T>)' being compiled
-          with
-          [
-              T=int
-          ]
   Math Library.vcxproj -> C:\Users\jeremy.barzas\Desktop\Homework\Math Library\Math Library\Debug\Math Library.exe
