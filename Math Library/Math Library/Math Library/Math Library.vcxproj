@@ -121,7 +121,6 @@
     <ClInclude Include="Math_Header.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Math_Header.cpp" />
     <ClCompile Include="Math_Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2,67 +2,61 @@
 
 void main()
 {
+	// Math for 2D Vectors.
+	Vector2D<float> vector2Da(6, 12);
+	Vector2D<float> vector2Db(3, 1);
+
+	// 2D vector addition.
+	Vector2D<float> sum2D = vector2Da.add(vector2Db);
 	
-	// addition of 2D and 3D Vectors.
-	Vector2D<float> vector2D1(6, 12);
-	Vector2D<float> vector2D2(3, 1);
+	cout << "Addition of two 2D Vectors." << endl;
+	sum2D.print();
 
-	Vector2D<float> sum2D(0, 0);
-	sum2D = add2D(vector2D1, vector2D2, sum2D);
+	// 2D vector subtraction.
+	Vector2D<float> dif2D = vector2Da.sub(vector2Db);
 
-	cout << "Addition of two 2D Vectors: " << sum2D.x << ", "<< sum2D.y << endl;
+	cout << "Subtraction of two 2D Vectors." << endl;
+	dif2D.print();
 
-	Vector3D<float> vector3D1(6, 12, 4);
-	Vector3D<float> vector3D2(3, 1, 20);
-
-	Vector3D<float> sum3D(0, 0, 0);
-	sum3D = add3D(vector3D1, vector3D2, sum3D);
-
-	cout << "Addition of two 3D Vectors: " << sum3D.x << ", " << sum3D.y << ", " << sum3D.z << endl;
-	cout << "\n";
-
-	// subtraction of 2D and 3D Vectors.
-	Vector2D<float> vector2D3(6, 12);
-	Vector2D<float> vector2D4(3, 1);
-
-	Vector2D<float> dif2D(0, 0);
-	dif2D = sub2D(vector2D3, vector2D4, dif2D);
-
-	cout << "Subtraction of two 2D Vectors: " << dif2D.x << ", " << dif2D.y << endl;
-
-	Vector3D<float> vector3D3(6, 12, 4);
-	Vector3D<float> vector3D4(3, 1, 20);
-
-	Vector3D<float> dif3D(0, 0, 0);
-	dif3D = sub3D(vector3D3, vector3D4, dif3D);
-
-	cout << "Subtraction of two 3D Vectors: " << dif3D.x << ", " << dif3D.y << ", " << dif3D.z << endl;
-	cout << "\n";
-	
-	// magnitude of 2D and 3D Vectors.
-	Vector2D<float> vector2D5(6, 12);
-
-	float mag1 = mag2D(vector2D5);
+	// 2D vector magnitude.
+	float mag1 = vector2Da.mag();
 
 	cout << "Magnitude of a 2D Vector: " << mag1 << endl;
+	cout << "\n";
+	
+	// 2D vector normalize.
+	Vector2D<float> normalized2D = vector2Da.normalize();
 
-	Vector3D<float> vector3D5(6, 12, 4);
+	cout << "Normalizing a 2D Vector." << endl;
+	normalized2D.print();
 
-	float mag2 = mag3D(vector3D5);
+	// Math for 3D Vectors.
+	Vector3D<float> vector3Da(6, 12, 4);
+	Vector3D<float> vector3Db(3, 1, 20);
+
+	// 3D vector addition.
+	Vector3D<float> sum3D = vector3Da.add(vector3Db);
+
+	cout << "Addition of two 3D Vectors." << endl;
+	sum3D.print();
+
+	// 3D vector subtraction.
+	Vector3D<float> dif3D = vector3Da.sub(vector3Db);
+
+	cout << "Subtraction of two 3D Vectors." << endl;
+	dif3D.print();
+	
+	// 3D vector magnitude.
+	float mag2 = vector3Da.mag();
 
 	cout << "Magnitude of a 3D Vector: " << mag2 << endl;
 	cout << "\n";
 
-	// normalising 2D and 3D Vectors.
-	Vector2D<float> vector2D6(6, 12);
-	Vector2D<float> normal2D(0, 0);
+	// 3D vector normalize.
+	Vector3D<float> normalized3D = vector3Da.normalize();
 
-	float mag3 = mag2D(vector2D6);
-
-	norm2D(vector2D6, normal2D, mag3);
-
-	cout << "Normalising a 2D Vector: " << normal2D.x << ", " << normal2D.y << endl;
-	
+	cout << "Normalize a 3D Vector." << endl;
+	normalized3D.print();
 
 	system("pause");
 }
