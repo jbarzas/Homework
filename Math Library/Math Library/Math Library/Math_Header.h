@@ -17,6 +17,7 @@ public:
 	Vector2D<T> sub(Vector2D<T>);
 	T mag();
 	Vector2D<T> normalize();
+	T dotProduct(Vector2D<T>);
 	void print();
 };
 
@@ -66,6 +67,15 @@ Vector2D<T> Vector2D<T>::normalize()
 	return temp;
 }
 
+// Finding the Dot Product of 2D Vectors
+template <typename T>
+T Vector2D<T>::dotProduct(Vector2D<T> b)
+{
+	T dotP = (this->x * b.x) + (this->y * b.y);
+
+	return dotP;
+}
+
 // Print the value of a 2D Vector
 template <typename T>
 void Vector2D<T>::print()
@@ -88,11 +98,12 @@ public:
 	Vector3D<T> sub(Vector3D<T>);
 	T mag();
 	Vector3D<T> normalize();
+	T dotProduct(Vector3D<T>);
 	void print();
 };
 
 // Addition of two 3D vectors.
-template<typename T>
+template <typename T>
 Vector3D<T> Vector3D<T>::add(Vector3D<T> b)
 {
 	Vector3D<T> temp({ (this->x + b.x), (this->y + b.y), (this->z + b.z) });
@@ -101,7 +112,7 @@ Vector3D<T> Vector3D<T>::add(Vector3D<T> b)
 }
 
 // Subtraction of two 3D vectors.
-template<typename T>
+template <typename T>
 Vector3D<T> Vector3D<T>::sub(Vector3D<T> b)
 {
 	Vector3D<T> temp({ (this->x - b.x), (this->y - b.y), (this->z - b.z) });
@@ -127,6 +138,15 @@ Vector3D<T> Vector3D<T>::normalize()
 	Vector3D<T> temp({ (this->x / mag), (this->y / mag), (this->z / mag) });
 
 	return temp;
+}
+
+// Finding the Dot Product of 3D Vectors
+template <typename T>
+T Vector3D<T>::dotProduct(Vector3D<T> b)
+{
+	T dotP = (this->x * b.x) + (this->y * b.y) + (this->z * b.z);
+
+	return dotP;
 }
 
 // Print the value of a 3D Vector

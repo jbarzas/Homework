@@ -30,6 +30,13 @@ void main()
 	cout << "Normalizing a 2D Vector." << endl;
 	normalized2D.print();
 
+	// 2D Dot Product
+	float dotP2D = vector2Da.dotProduct(vector2Db);
+
+	cout << "Finding the Dot Product of two 2D Vectors." << endl;
+	cout << "Dot Product: " << dotP2D << endl;
+	cout << "\n";
+
 	// Math for 3D Vectors.
 	Vector3D<float> vector3Da(6, 12, 4);
 	Vector3D<float> vector3Db(3, 1, 20);
@@ -57,6 +64,13 @@ void main()
 
 	cout << "Normalize a 3D Vector." << endl;
 	normalized3D.print();
+
+	// 3D Dot Product
+	float dotP3D = vector3Da.dotProduct(vector3Db);
+
+	cout << "Finding the Dot Product of two 3D Vectors." << endl;
+	cout << "Dot Product: " << dotP3D << endl;
+	cout << "\n";
 
 	system("pause");
 }
