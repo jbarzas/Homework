@@ -2,7 +2,7 @@ Target demographic: Hardcore competitive for glory or casual just for fun player
 
 Target platform: Windows, Mac, Consoles
 
-A first person game heavily using physics driven animation to make striking something with a melee weapon feel like you are hitting something and not just tagging a target and causing it to lose health points. My end goal is to make a game that plays at as close to the speed of the players reaction time as possible with the only variables that effect your character's speed to act at the speed you input a command being your characters current amount of stamina and the gear set they choose.
+A first person game heavily using physics driven animation to make striking something with a melee weapon feels like you are hitting something and not just tagging a targets hit box, causing it to lose health points. My end goal is to make a game that plays at as close to the speed of the players reaction time as possible with the only variables that effect your character's speed to act at the speed you input a command being your characters current amount of stamina and the gear set they choose.
 
 ______________
 Control Scheme
@@ -10,12 +10,12 @@ Control Scheme
 
 The way I logically see the game to be played is with a controller that has 2 joysticks(that are also a click button), 4 triggers/bumpers, 4 face buttons, and a D-pad.
 
-I havent yet figured out how to bind all the functions to a keyboard and mouse in a way that it would feel as fluid as using a controller. This limits the player base to people who are on consoles or already own a controller for their computer that meets the requirements for the game.
-
-
 To make your character attack you must press and hold the right trigger(for swinging attack) or the right bumper(for thrusting attack) and input a direction you want to attack from with the right joystick(looking joystick) then release it. If no direction was inputted then the attack will go directly to the center of your view. The longer you hold the attack button before release determines how strong the attack will be. 
 
 To block an attack you must press and hold the left trigger(to block), then input the direction you want to block in. If you match the direction of an incoming attack if will be a perfect block, which causes the attacker to be staggered. If the direction of the block is within a short distance of attack direction it will be a normal block, which causes the attacker and defender to be staggered. If no direction was inputted then the block will be in the center and it will be a quick block, which causes the defender to be staggered.
+
+I havent yet figured out how to bind all the functions to a keyboard and mouse in a way that it would feel as fluid as using a controller. This limits the player base to people who are on consoles or already own a controller for their computer that meets the requirements for the game.
+
 
 _____________________________________________________________________________________________
 The character creation screen include the choices of race, weapon, armor, and equipment items.
