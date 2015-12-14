@@ -1,0 +1,11 @@
+﻿SDL-OpenGL Student Library.lib(Graphics.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in GameLoop.obj
+SDL-OpenGL Student Library.lib(Graphics.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in GameLoop.obj
+SDL-OpenGL Student Library.lib(Graphics.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+SDL-OpenGL Student Library.lib(Window.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in GameLoop.obj
+SDL-OpenGL Student Library.lib(Window.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in GameLoop.obj
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+SDL-OpenGL Student Library.lib(Graphics.obj) : error LNK2001: unresolved external symbol __imp___invalid_parameter
+SDL-OpenGL Student Library.lib(Window.obj) : error LNK2001: unresolved external symbol __imp___invalid_parameter
+SDL-OpenGL Student Library.lib(Graphics.obj) : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+SDL-OpenGL Student Library.lib(Window.obj) : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+C:\Users\jeremy.barzas\Desktop\AIE_Framework-2015\Release\Your Project.exe : fatal error LNK1120: 2 unresolved externals

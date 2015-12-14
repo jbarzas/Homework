@@ -1,0 +1,18 @@
+﻿  Source.cpp
+c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\source.cpp(9): fatal error C1083: Cannot open include file: 'Math_Header.h': No such file or directory
+  GameLoop.cpp
+c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(293): warning C4244: 'argument': conversion from 'const float' to 'GLubyte', possible loss of data
+  c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\gameloop.cpp(53): note: see reference to function template instantiation 'void Graphics::DrawLine<float>(const System::Point2D<float> &,const System::Point2D<float> &,const System::Color<float> &)' being compiled
+c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(352): warning C4244: 'argument': conversion from 'const int' to 'GLfloat', possible loss of data
+  c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\gameloop.cpp(63): note: see reference to function template instantiation 'void Graphics::DrawCircle<int>(const System::Point2D<int>,const T,const T,const System::Color<T> &)' being compiled
+          with
+          [
+              T=int
+          ]
+c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(356): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(357): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(311): warning C4244: 'argument': conversion from 'const float' to 'GLubyte', possible loss of data
+  c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\gameloop.cpp(66): note: see reference to function template instantiation 'void Graphics::DrawPoint<float>(const System::Point2D<float> &,const System::Color<float> &)' being compiled
+c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(267): warning C4244: 'argument': conversion from 'const float' to 'GLubyte', possible loss of data
+  c:\users\jeremy.barzas\desktop\aie_framework-2015\your project\gameloop.cpp(67): note: see reference to function template instantiation 'void Graphics::DrawRect<float>(const System::Point2D<float> &,const System::Size2D<float> &,const System::Color<float> &)' being compiled
+  Generating Code...
