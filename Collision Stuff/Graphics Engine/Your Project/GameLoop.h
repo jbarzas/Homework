@@ -58,5 +58,4 @@ public:
 	~GameLoop();
 };
 
-
 #endif // _GAMELOOP_H_

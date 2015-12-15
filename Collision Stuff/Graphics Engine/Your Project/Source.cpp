@@ -13,7 +13,7 @@ int wmain()
 	// testing math lib
 	Vector2D<float> vector2d(6,12);
 
-	// printing vector made form math library
+	// printing vector made from math library
 	vector2d.print();
 	
 	Graphics::Init();
