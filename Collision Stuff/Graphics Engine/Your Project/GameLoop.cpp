@@ -69,8 +69,7 @@ void GameLoop::Loop()
 				Xcollision = true;
 				//cout << "Collision Detected on the X Axis!" << endl;
 				//cout << "rec1Max.X = " << rec1Max.X << endl;
-				//cout << "rec2Min.X = " << rec2Min.X << endl;
-				
+				//cout << "rec2Min.X = " << rec2Min.X << endl;	
 			}
 
 			// tesing info
@@ -82,11 +81,11 @@ void GameLoop::Loop()
 			{
 				Ycollision = true;
 				cout << "Collision Detected on the Y Axis!" << endl;
-				
 			}
 
 			if (Xcollision && Ycollision)
 				cout << "Collision Detected! @" << clock() << endl;
+
 			else
 			{
 				Xcollision = false;
